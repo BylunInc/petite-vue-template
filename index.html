@@ -1,0 +1,38 @@
+<!DOCTYPE html v-scope>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>petite-vue starter</title>
+</head>
+<body class="bg-[#35495e]">
+    <div class="flex flex-col items-center justify-center">
+        <div class="w-full items-center justify-center">
+            <h1 class="text-vue_green text-center text-4xl mb-0">petite-vue Starter Template</h1>
+            <span class="block text-sm text-center w-full">by <a href="https://github.com/BylunInc" class="text-vue_green">Maxime Vigneron</a></span>    
+        </div>
+        <p class="text-center w-2/3 text-xl" >
+            Welcome to your <span class="text-vue_green">petite-vue</span> starter template. This template
+            uses the power of petite-vue, provided by the team at <span class="text-vue_green">Vue.js</span>, and <span class="text-vue_green">TailwindCSS</span>.
+        </p>
+        <button class="text-lg p-2 rounded-lg border-2 border-black border-solid bg-vue_green" @click="count++">
+            count: {{count}}
+        </button>
+        <p class="text-lg mt-8">
+            This template is powered by : 
+            <ul class="m-0 p-0">
+                <li><a href="https://github.com/vuejs/petite-vue" class="text-lg text-vue_green">petite-vue</a></li>
+                <li><a href="https://tailwindcss.com/docs/installation" class="text-lg text-vue_green">TailwindCSS</a></li>
+            </ul>
+        </p>
+    </div>
+    <script type="module">
+        import { createApp } from 'https://unpkg.com/petite-vue?module'
+        createApp({
+            count : 0
+        }).mount()
+    </script>
+</body>
+</html>
